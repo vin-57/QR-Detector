@@ -1,5 +1,3 @@
-
-
 import pyzbar.pyzbar as pyzbar
 import cv2
 
@@ -30,12 +28,11 @@ while(cap.isOpened()):
   cv2.imshow('img', img)
 
   key = cv2.waitKey(1)
-  if key == ord('q'):
+  if key == ord('q'): #press the "q" key to close the image window
     break
-  elif key == ord('s'):
+  elif key == ord('s'): #captured by pressing the "s" key
     i += 1
     cv2.imwrite('c_%03d.jpg' % i, img)
 
 cap.release()
 cv2.destroyAllWindows()
-                                                                                               
