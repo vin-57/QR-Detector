@@ -4,7 +4,7 @@ from pyzbar.pyzbar import decode
 import cv2 #read image/camera/video input
 import numpy as np
 
-cap = cv2.VideoCapture(IMG_6064.MOV)
+cap = cv2.VideoCapture('IMG_6064.MOV')
 
 i = 0
 while(cap.isOpened()):
