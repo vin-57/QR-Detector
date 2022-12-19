@@ -1,5 +1,8 @@
+# import the necessary libraries
 import pyzbar.pyzbar as pyzbar
-import cv2
+from pyzbar.pyzbar import decode
+import cv2 #read image/camera/video input
+import numpy as np
 
 cap = cv2.VideoCapture(0)
 
